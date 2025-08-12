@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS INTRO</title>
+<style>
+    body {
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+    .doct {
+        background: white;
+        width: 794px; /* A4 width */
+        min-height: 1123px; /* A4 height */
+        padding: 30px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+    }
+    h1, h2, h3, h4, h5 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    pre {
+        background-color: #222;
+        color: #f8f8f2;
+        padding: 10px;
+        overflow-x: auto;
+    }
+    /* Section backgrounds */
+    .inline-css {
+        background-color: #ec9976;
+        padding: 15px;
+        border-radius: 5px;
+    }
+    .internal-css {
+        background: linear-gradient(to bottom right, lightpink, white);
+        padding: 15px;
+        border-radius: 5px;
+    }
+    .external-css {
+        background-color: lightgreen;
+        padding: 15px;
+        border-radius: 5px;
+    }
+</style>
+</head>
+<body>
+<div class="doct">
+
+    <h1>INTRODUCTION ABOUT CSS</h1>
+    <h2>CSS</h2>
+    <p>
+        Cascading style sheet <br>
+        Using CSS we can create RWD (Responsive Web Design) <br>
+        Responsive means reaction <br>
+        Web design means we display our content based on our desktop size <br>
+        <h4>CSS stands for Cascading Style Sheets</h4>
+        CSS describes how HTML elements are to be displayed on screen, paper, or in other media <br>
+        CSS saves a lot of work. It can control the layout of multiple web pages all at once <br>
+        External stylesheets are stored in CSS files
+    </p>
+
+    <h3>Why do we need CSS</h3>
+    <ul>
+        <li>Without CSS, all web pages would look plain and boring. CSS allows us to:</li>
+        <li>Change colors, fonts, sizes</li>
+        <li>Add margins, padding, borders</li>
+        <li>Make the page Responsive (fit different screen sizes)</li>
+        <li>Create animations and transitions</li>
+        <li>Build modern layouts like grids and flexboxes</li>
+    </ul>
+
+    <h3>Three Ways to Insert CSS into HTML</h3>
+    <p>CSS can be added to HTML in three different ways:</p>
+    <ol>
+
+        <!-- Inline CSS -->
+        <li><h3>Inline CSS</h3></li>
+        <div class="inline-css">
+            <p>CSS is added directly inside an HTML tag using the style attribute</p>
+            <ul type="disc">
+                <li>Syntax:</li>
+                <p>&lt;tag style="property: value;"&gt;Content&lt;/tag&gt;</p>
+                <h5>Example :</h5>
+                <p>&lt;p style="color:red;font-size:20px;"&gt;This is red text&lt;/p&gt;</p>
+                <h5>Use When: </h5>
+                <li>You need to style one element only</li>
+                <li>For quick testing or debugging</li>
+            </ul>
+        </div>
+
+        <!-- Internal CSS -->
+        <li><h3>Internal CSS</h3></li>
+        <div class="internal-css">
+            <p>CSS is written inside the &lt;style&gt; tag in the &lt;head&gt; section of the HTML file</p>
+            <ul type="disc">
+                <li>Syntax:</li>
+                <pre>&lt;head&gt;
+                &lt;style&gt;
+                    selector {
+                        property: value;
+                    }
+                &lt;/style&gt;
+                &lt;/head&gt;</pre>
+        <h5>Example:</h5>
+<pre>&lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+        &lt;head&gt;
+             &lt;style&gt;
+                p {
+                    color: blue;
+                    font-size: 18px;
+                    }
+                &lt;/style&gt;
+        &lt;/head&gt;
+         &lt;body&gt;
+            &lt;p&gt;This is a blue paragraph.&lt;/p&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;</pre>
+                <h5>Use When:</h5>
+                <li>You are working on a single HTML file</li>
+                <li>Small projects or quick demos</li>
+            </ul>
+        </div>
+
+        <!-- External CSS -->
+        <li><h3>External CSS</h3></li>
+        <div class="external-css">
+            <p>CSS is written in a separate file with a .css extension, and it is linked to the HTML file using the &lt;link&gt; tag.</p>
+            <ul type="disc">
+                <li><h4>Syntax to Link:</h4></li>
+                <pre>&lt;link rel="stylesheet" href="style.css"&gt;</pre>
+
+                <h5>Example:</h5>
+                <p><strong>style.css</strong></p>
+                <pre>h1 {
+    color: green;
+    text-align: center;
+        }</pre>
+
+                <p><strong>index.html</strong></p>
+<pre>&lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+        &lt;head&gt;
+            &lt;link rel="stylesheet" href="style.css"&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;Welcome to CSS!&lt;/h1&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;</pre>
+
+                <h5>Use When:</h5>
+                <li>You are working on large or multiple-page websites</li>
+                <li>You want to reuse styles across many pages</li>
+                <li>Best practice for clean code and separation of concerns</li>
+            </ul>
+        </div>
+
+    </ol>
+</div>
+</body>
+</html>
