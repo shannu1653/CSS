@@ -8,18 +8,26 @@
     body {
         background-color: #f0f0f0;
         display: flex;
-        justify-content: center;
-        padding: 20px;
+        justify-content: center; /* horizontal center */
+        align-items: center;     /* vertical center */
+        min-height: 100vh;       /* full height viewport */
+        margin: 0;               /* remove default margin */
+        padding: 20px;           /* space around on smaller screens */
     }
     .doct {
-        background: white;
-        width: 794px; /* A4 width */
-        min-height: 1123px; /* A4 height */
-        padding: 30px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.2);
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-    }
+    background: white;
+    width: 794px; /* A4 width */
+    min-height: 1123px; /* A4 height */
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+
+    /* Border like Indian flag */
+    border: 8px solid transparent;
+    border-image: linear-gradient(to bottom, rgb(223, 97, 24), white, green) 1;
+}
+
     h1, h2, h3, h4, h5 {
         margin-top: 10px;
         margin-bottom: 10px;
@@ -32,26 +40,34 @@
     }
     /* Section backgrounds */
     .inline-css {
-        background-color: #ec9976;
+        background-color: #e35e16;
         padding: 15px;
         border-radius: 5px;
+        color: white;
     }
     .internal-css {
-        background: linear-gradient(to bottom right, lightpink, white);
+        background: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(20, 29, 203));
         padding: 15px;
         border-radius: 5px;
+        color: white;
     }
     .external-css {
-        background-color: lightgreen;
+        background-color: rgb(9, 104, 9);
         padding: 15px;
         border-radius: 5px;
+        color: white;
     }
+    h1 {
+    text-align: center;
+    color: orangered;
+}
+
 </style>
 </head>
 <body>
 <div class="doct">
 
-    <h1>INTRODUCTION ABOUT CSS</h1>
+    <h1><u>INTRODUCTION ABOUT CSS </u></h1>
     <h2>CSS</h2>
     <p>
         Cascading style sheet <br>
