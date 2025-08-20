@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Combinator Selectors Example</title>
+  <style>
+    /* 1. Descendant Selector */
+    .box p {
+      color: blue;
+      border: 2px dashed blue;
+      background: #e6f0ff;
+      padding: 5px;
+    }
+
+    /* 2. Child Selector */
+    .box > p {
+      font-weight: bold;
+      color: green;
+      border: 2px solid green;
+      background: #eaffea;
+    }
+
+    /* 3. Adjacent Sibling Selector */
+    h2 + p {
+      color: red;
+      border: 2px solid red;
+      background: #ffe6e6;
+      padding: 5px;
+    }
+
+    /* 4. General Sibling Selector */
+    h3 ~ p {
+      color: purple;
+      font-style: italic;
+      border: 2px solid purple;
+      background: #f3e6ff;
+      padding: 5px;
+    }
+
+    /* General styling */
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h1, h2, h3 {
+      border-bottom: 2px solid #170505;/*underline */
+      padding-bottom: 4px; /*space between hi to line*/
+    }
+
+    .nested {
+      border: 2px dotted gray; /*dotted boreder*/
+      margin: 5px;
+      padding: 5px;
+      background: #f84949;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Combinator Selectors Demo</h1>
+
+  <h2>1. Descendant & Child Selector</h2>
+  <div class="box" style="border:2px solid black; padding:10px;">
+    <p>This paragraph is a direct child → Green & Bold (child selector)</p>
+    <div class="nested">
+      <p>This paragraph is inside a nested div → Blue only (descendant selector)</p>
+    </div>
+  </div>
+  <p>This paragraph is outside the .box → Not affected</p>
+
+  <hr>
+
+  <h2>2. Adjacent Sibling Selector</h2>
+  <h2>Heading 2</h2>
+  <p>This paragraph comes immediately after h2 → Red (adjacent sibling)</p>
+  <p>This one is after another p → Not red</p>
+
+  <hr>
+
+  <h2>3. General Sibling Selector</h2>
+  <h3>Heading 3</h3>
+  <p>This paragraph is a sibling after h3 → Purple & Italic</p>
+  <p>This is also after h3 → Purple & Italic</p>
+  <div><p>But this is inside a div → Not affected</p></div>
+</body>
+</html>
