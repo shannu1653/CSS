@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music_Disc</title>
+    <style>
+        .cotainer{
+        height: 100vh;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        .disc{
+        height: 100vh;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation-name:animation ;
+        animation-iteration-count: infinite;
+        animation-duration: 0.1s;
+        animation-timing-function: linear;
+
+        }
+        @keyframes animation{
+            0%{
+                transform: rotate(360deg);
+        
+            }
+            100%{
+                transform: rotate(860deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="disc">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT504ia0KoV1SwfO2PlwKVD-JgyGTN_kB2BgA&s" alt="">
+        </div>
+    </div>
+</body>
+</html>
