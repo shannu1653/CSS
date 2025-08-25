@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro_Animations
+    </title>
+    <style>
+        .circle1{
+            height: 400px;
+            width: 400px;
+            background-image: url("https://i.ytimg.com/vi/G1coV0RodGA/sddefault.jpg?sqp=-oaymwEmCIAFEOAD8quKqQMa8AEB-AHWBIAC4AOKAgwIABABGGUgTShPMA8=&rs=AOn4CLAjU8GqCZlsjIScqaPd18zjje_16A");
+            position: relative;
+            animation-name: sun;
+            animation-delay: 2s;
+            animation-duration: 8s;
+            animation-timing-function: liner;
+            animation-direction:alternate;
+            animation-iteration-count: 2;
+
+        }
+        @keyframes sun{
+            0%{
+               background-image: url("https://yt3.googleusercontent.com/_xE6pN48zJ3yjosEDiJFjlwJa8AO24_qXrYk6qtWZepFKB0Z6pHimtL7FbE1XcyvTEggeyzY=s900-c-k-c0x00ffffff-no-rj");
+               background-size: 200px;
+               left: 200px;
+            }
+            30%{
+              background-image: url("https://theseer.in/wp-content/uploads/2020/05/heidi-1024x576-1.jpg");
+              background-size: 200px;
+              top: 200px;
+              left: 4%;
+            }
+            50%{
+                background-image: url("https://t3.ftcdn.net/jpg/00/42/19/70/360_F_42197066_aigiZf1P60VUB9YKfrttLq4GxCa1iYT9.jpg");
+                background-size: 200px;
+                top: 400px;
+                left: 4%;
+
+            }
+            74%{
+                background-image: url('https://t3.ftcdn.net/jpg/00/42/19/70/360_F_42197066_aigiZf1P60VUB9YKfrttLq4GxCa1iYT9.jpg');
+                background-size: 200px;
+                top: 300px;
+                left: 300px;
+
+            }
+            100%{
+                background-image:url('https://www.shutterstock.com/image-vector/silhouette-horrible-shadow-monster-sharp-260nw-2446371533.jpg') ;
+                background-size: 200px;
+                left: 0px;
+                top: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Animation_Intro</h1>
+    <div class="container">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+
+    </div>
+</body>
+</html>
