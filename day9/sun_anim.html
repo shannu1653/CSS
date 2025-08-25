@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sun_anim</title>
+    <style>
+        .container{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(240, 83, 10);
+        }
+        .container>.sun{
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(240, 83, 10);
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            z-index: 1000;
+        }
+        .container>.moon{
+            position: absolute; 
+            background-color: gold;
+            width: 210px;
+            height: 210px;
+            border-radius: 50%;
+            animation-name: moon;
+            animation-duration: 4s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+
+    
+        }
+  @keyframes moon {
+  0% {
+    transform: translateX(-50px) scale(1);
+    filter: brightness(10);
+
+  }
+  40% {
+    transform: translateX(0) scale(1);
+    filter: brightness(100);
+    box-shadow: 0 0 40px gold;
+  }
+  50% {box-shadow: 10 10 100px gold; }
+  100% {
+    transform: translateX(50px) scale(1);
+    filter: brightness(10);
+  }
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sun"></div>
+        <div class="moon"></div>
+    </div>
+</body>
+</html>
