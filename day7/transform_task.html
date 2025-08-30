@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transforms_intro</title>
+    <style>
+        body{
+            background-color:black;
+        }
+        .container{
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(0, 0, 0);
+            flex-direction: column; /* stack rows vertically */
+            gap: 40px; /* space between rows */
+        }
+        .translate, .scale, .rotate, .skew, .matrix{
+            display: flex;
+        }
+        /* common box style */
+        .translate1,.translatex,.translatey,.translatez,.translate3d,
+        .scale1,.scalex,.scaley,.scalez,.scale3d,
+        .rotate1,.rotatex,.rotatey,.rotatez,.rotate3d,
+        .skew1,.skewx,.skewy,.skewxy,
+        .matrix1,.matrix3d{
+            margin-left: 20px;
+            width: 150px;
+            height: 150px;
+            background-color: aqua;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-top: 5px solid red;
+            border-right: 5px solid green;
+            border-bottom: 5px solid blue;
+            border-left: 5px solid orange;
+            transition: all 2s;
+        }
+        /* Translate */
+        .translate1:hover{ transform: translate(100px); }
+        .translatex:hover{ transform: translateX(100px); }
+        .translatey:hover{ transform: translateY(100px); }
+        .translatez:hover{ transform: perspective(500px) translateZ(100px); }
+        .translate3d:hover{ transform: perspective(500px) translate3d(100px, 50px, 200px); }
+
+        /* Scale */
+        .scale1:hover{ transform: scale(2); }
+        .scalex:hover{ transform: scaleX(2); }
+        .scaley:hover{ transform: scaleY(2); }
+        .scalez:hover { transform: perspective(500px) rotateY(45deg) scaleZ(2); }
+        .scale3d:hover { transform: perspective(500px) scale3d(2, 2, 2); }
+
+        /* Rotate */
+        .rotate1:hover{ transform: rotate(360deg); }
+        .rotatex:hover{ transform: rotateX(180deg); }
+        .rotatey:hover{ transform: rotateY(180deg); }
+        .rotatez:hover{ transform: rotateZ(360deg); }
+        .rotate3d:hover{ transform: rotate3d(1, 1, 0, 360deg); }
+
+        /* Skew */
+        .skew1:hover{ transform: skew(30deg, 30deg); }
+        .skewx:hover{ transform: skewX(180deg); }
+        .skewy:hover{ transform: skewY(180deg); }
+        .skewxy:hover{ transform: skew(30deg, 30deg); }
+
+        /* Matrix */
+        .matrix1:hover{ transform: matrix(1, 0.5, 0.5, 1, 50, 20); }
+        .matrix3d:hover{ 
+            transform: perspective(500px) matrix3d(
+                1, 0, 1, 0,
+                0, 1, 0.5, 0,
+                1, 0.5, 1, 0,
+                1, 1, 0, 1
+            ); 
+        }
+    </style>
+</head>
+<body>
+    <h1 style="align-items: center; justify-content: center; display: flex; color: hotpink;">TRANSFORMS</h1>
+    <div class="container">
+        <!-- Translate row -->
+        <div class="translate">
+            <div class="translate1">Translate()</div>
+            <div class="translatex">TranslateX()</div>
+            <div class="translatey">TranslateY()</div>
+            <div class="translatez">TranslateZ()</div>
+            <div class="translate3d">Translate3d()</div>
+        </div>
+
+        <!-- Scale row -->
+        <div class="scale">
+            <div class="scale1">Scale()</div>
+            <div class="scalex">ScaleX()</div>
+            <div class="scaley">ScaleY()</div>
+            <div class="scalez">ScaleZ()</div>
+            <div class="scale3d">Scale3d()</div>
+        </div>
+
+        <!-- Rotate row -->
+        <div class="rotate">
+            <div class="rotate1">Rotate()</div>
+            <div class="rotatex">RotateX()</div>
+            <div class="rotatey">RotateY()</div>
+            <div class="rotatez">RotateZ()</div>
+            <div class="rotate3d">Rotate3d()</div>
+        </div>
+
+        <!-- Skew row -->
+        <div class="skew">
+            <div class="skew1">Skew()</div>
+            <div class="skewx">SkewX()</div>
+            <div class="skewy">SkewY()</div>
+            <div class="skewxy">SkewXY()</div>
+        </div>
+
+        <!-- Matrix row -->
+        <div class="matrix">
+            <div class="matrix1">Matrix()</div>
+            <div class="matrix3d">Matrix3d()</div>
+        </div>
+    </div>
+</body>
+</html>
