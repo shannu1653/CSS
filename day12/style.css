@@ -68,7 +68,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 12px 24px !important;
-    margin-left: 30px;
+    margin-left: 50px;
 }
 .Aboutcatering h1,h4{
     align-items: center;
@@ -179,5 +179,18 @@ hr{
     margin-inline-end: auto;
     unicode-bidi: isolate;
     width: 80%;
+}
+.navbar .text1>p,
+.navbar .text2>a,
+.contact button {
+    padding: 10px;
+    transition: background-color 0.3s ease; 
+}
+
+.navbar .text1>p:hover,
+.navbar .text2>a:hover,
+.contact button:hover {
+    background-color: #d1cccc !important;
+    cursor: pointer;
 }
 
