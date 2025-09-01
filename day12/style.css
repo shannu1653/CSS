@@ -186,7 +186,6 @@ hr{
     padding: 10px;
     transition: background-color 0.3s ease; 
 }
-
 .navbar .text1>p:hover,
 .navbar .text2>a:hover,
 .contact button:hover {
