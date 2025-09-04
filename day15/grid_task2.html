@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-task2</title>
+    <style>
+        .parent{
+            margin-top: 45px;
+           display: grid;
+            width: 80vh;
+            height: 80vh;
+            place-content: center center;
+            margin-left: 250px;
+            justify-content: center;
+    
+
+            grid-template-areas: 
+          'img1 img2 img3 img4' 
+            'img1 img2 img3 img4' 
+            'img1 img6 img7 img4'
+            'img5  img6 img7 img8'
+            'img5 img6 img11 img8'
+            'img5 img10 img11 img12'
+            'img9 img10 img13 img12'
+            ;
+        }
+        .parent img{
+            width: 100%;
+            height: 100%;
+        }
+        .img1{
+            grid-area: img1;
+        }
+        .img2{
+            grid-area: img2;
+
+        }
+        .img3{
+            grid-area: img3;
+            
+        }
+        .img4{
+            grid-area: img4;
+            
+
+        }.img5{
+            grid-area: img5;
+          
+        }
+        .img6{
+            grid-area: img6;
+            
+        }
+        .img7{
+            grid-area: img7;
+            
+        }
+        .img8{
+            grid-area: img8;
+            
+        }
+        .img9{
+            grid-area: img9;
+           
+        }
+        .img10{
+            grid-area: img10;
+            
+        }
+        .img11{
+            grid-area: img11;
+            
+        }
+        .img12{
+            grid-area: img12;
+            
+        }
+        .img13{
+            grid-area: img13;
+    
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <img src="./animal-cat-cute-domestic.jpg" alt="" class="img1">
+        <img src="https://live.staticflickr.com/5498/12588115603_b692d0b7e8_z.jpg" alt="" class="img2">
+        <img src="https://www.homeopathyamerica.com/wp-content/uploads/cat1-300x229.jpg" alt="" class="img3">
+        <img src="https://i.pinimg.com/736x/01/b3/f6/01b3f6df17967bbd0c89328c46976844.jpg" alt="" class="img4">
+        <img src="https://withinpixels.github.io/wip-image-zoom/assets/images/5-thumb.jpg" alt="" class="img5">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Sand_Cat_Bath_(4415787998).jpg/1200px-Sand_Cat_Bath_(4415787998).jpg" alt="" class="img6" >
+        <img src="https://i.pinimg.com/736x/cc/5c/c1/cc5cc1ad04ab1dfccfbc459e31fb8c7a.jpg" alt="" class="img7">
+        <img src="https://withinpixels.github.io/wip-image-zoom/assets/images/5-thumb.jpg" alt="" class="img8">
+        <img src="https://live.staticflickr.com/2693/4070553867_074c472cce_z.jpg" alt="" class="img9">
+        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTlapIcOxUUj1PC8cQE4SjpRAHVAp7AAp2jatJCdIU6ONqZ5Tkn" alt="" class="img10">
+        <img src="https://www.cssscript.com/wp-content/uploads/2015/06/Pure-JavaScript-Gallery-Lightbox-Library-LightBox-150x150.jpg" alt="" class="img11">
+        <img src="https://withinpixels.github.io/wip-image-zoom/assets/images/5-thumb.jpg" alt="" class="img12">
+        <img src="https://live.staticflickr.com/8127/29725961851_590c651b6d_w.jpg" alt="" class="img13">
+    </div>
+   
+</body>
+</html>
