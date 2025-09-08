@@ -12,20 +12,31 @@
             margin-top: 0px;
             border-top: 10px;
         }
-        .navbar>div{
-            margin-left: 200px;
-            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            margin-bottom: 10px;
-            margin-top: 10px;
+        .navbar .courses{
+            display: none;
         }
+        
+         .navbar:hover .courses{
+            color: blue;
+            border: none;
+            display:block;
+         }
+         .navbar input:hover .courses input{
+            display: block;
+         }
     </style>
 </head>
 <body>
     <div class="navbar">
-        <div style="margin-left: 0px;">Courses</div>
-        <div>For Students</div>
-        <div>Placement</div>
-        <div>practice</div>
+        courses
+        <div class="courses" >
+        <p>h</p>
+        <p>v</p>
+        <p>k</p>
+        <p>l</p>
+        <p>m</p>
+        <input type="text" style="display: none;">name
+        </div>
     </div>
 </body>
 </html>

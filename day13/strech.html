@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Stretch Example</title>
+  <style>
+    .container {
+      display: flex;
+      height: 300px;
+      border: 3px solid black;
+      gap: 20px;
+      align-items: stretch;/* 👈 stretch makes all items same height as container */
+    }
+
+    .box {
+      flex: 1;
+      background-color: lightblue;
+      border: 2px solid blue;
+      
+    }
+
+    .fixed {
+      flex: 1;
+      background-color: lightgreen;
+      border: 2px solid green;
+      height: 100px; /* 👈 fixed height will NOT stretch */
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Flexbox align-items: stretch Example</h2>
+
+  <div class="container">
+    <div class="box">Stretched Box 1</div>
+    <div class="box">Stretched Box 2</div>
+    <div class="fixed">Fixed Height Box</div>
+  </div>
+
+</body>
+</html>

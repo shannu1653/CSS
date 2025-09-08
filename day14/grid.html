@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .body{
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .container{
+            display: grid;
+            height: 50vh;
+            grid-template-columns: repeat(3,1fr);
+            gap: 10px;
+        }
+
+        .rasagulla{
+            background-color: orangered;
+            grid-column: 1/6;
+        }
+        .payasam{
+            background-color:blue;
+            grid-row: 2/6;
+        }
+        .honey{
+            background-color: chartreuse;
+            grid-row: 2/6;
+            grid-column: 2/5;
+        }
+        .kalakand{
+            background-color: yellow;
+            grid-row: 2/6;
+        }
+        .mysoorpak{
+            background-color: green;
+            grid-column: 1/6;
+        }
+    </style>
+</head>
+<body>
+    <div class="body">
+    <div class="container">
+        <div class="rasagulla">Rasagulla</div>
+        <div class="payasam">Payasam</div>
+        <div class="honey">honey</div>
+        <div class="kalakand">kalakand</div>
+        <div class="mysoorpak">mysoorpak</div>
+    </div>
+    </div>
+</body>
+</html>

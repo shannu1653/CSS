@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        .container{
+            border: 5px solid blue;
+            display: flex;
+            column-gap: 100px;
+            height: 100vh;
+            /* flex-wrap:wrap-reverse ; */
+            /* flex-flow: wrap row-reverse; */
+            /* justify-content:space-around ; */
+
+            /* align-items:stretch ; */
+            /* align-items: start; */
+            /* align-items: center; */
+
+            /* align-content:start ; */
+            /* align-items: start; */
+            align-content:start ;
+            flex-wrap: wrap;
+            row-gap: 100px;
+            /* column-gap: 1000px; */
+
+            
+        }
+        .container>p{
+            /* height: 100vh; */
+            background-color: green;
+            width: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+     <p>item1</p>
+     <p>item2</p>
+     <p>item3</p>
+     <p>item4</p>
+     <p>item5</p>
+     <p>item1</p>
+     <p>item2</p>
+     <p>item3</p>
+     <p>item4</p>
+     <p>item5</p>
+    
+    </div>
+</body>
+</html>
