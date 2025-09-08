@@ -8,13 +8,13 @@
         .parent{
             margin-top: 45px;
            display: grid;
-            width: 80vh;
-            height: 80vh;
-            place-content: center center;
-            margin-left: 300px;
-            justify-content: center;
+            width: 75vh;
+            height: 90vh;
+            gap: 2px;
+            background-color: rgb(215, 101, 13);
+            border: 5px solid rgb(69, 114, 86);
     
-
+            margin: auto;
             grid-template-areas: 
           'img1 img2 img3 img4' 
             'img1 img2 img3 img4' 
@@ -34,56 +34,182 @@
         }
         .img2{
             grid-area: img2;
-
         }
         .img3{
-            grid-area: img3;
-            
+            grid-area: img3;   
         }
         .img4{
-            grid-area: img4;
-            
+            grid-area: img4;   
 
         }.img5{
             grid-area: img5;
-          
         }
         .img6{
             grid-area: img6;
-            
         }
         .img7{
-            grid-area: img7;
-            
+            grid-area: img7;    
         }
         .img8{
-            grid-area: img8;
-            
+            grid-area: img8;    
         }
         .img9{
-            grid-area: img9;
-           
+            grid-area: img9;  
         }
         .img10{
-            grid-area: img10;
-            
+            grid-area: img10;    
         }
         .img11{
-            grid-area: img11;
-            
+            grid-area: img11;   
         }
         .img12{
-            grid-area: img12;
-            
+            grid-area: img12;    
         }
         .img13{
             grid-area: img13;
-    
         }
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* height: 60vh; */
+        background-color: cornflowerblue;   
+    }
+
+    @media  screen and (min-width:320px) and (max-width:426px) {
+        .parent{
+            margin-top: 45px;
+           display: grid;
+            width:100%;
+            height: 100%;
+            gap: 2px;
+            background-color: rgb(13, 215, 74);
+            border: 5px solid rgb(16, 154, 185);
     
+            margin: auto;
+            grid-template-areas: 
+          'img1 img2'
+          'img3 img4' 
+          'img5 img6'
+          'img7 img8' 
+          'img9 img10'
+          'img11 img12'
+          'img13 img12'
+            ;
+        }
+        .parent img{
+            width: 100%;
+            height: 100%;
+        }
+        .img1{
+            grid-area: img1;
+        }
+        .img2{
+            grid-area: img2;
+        }
+        .img3{
+            grid-area: img3;   
+        }
+        .img4{
+            grid-area: img4;   
+
+        }.img5{
+            grid-area: img5;
+        }
+        .img6{
+            grid-area: img6;
+        }
+        .img7{
+            grid-area: img7;    
+        }
+        .img8{
+            grid-area: img8;    
+        }
+        .img9{
+            grid-area: img9;  
+        }
+        .img10{
+            grid-area: img10;    
+        }
+        .img11{
+            grid-area: img11;   
+        }
+        .img12{
+            grid-area: img12;    
+        }
+        .img13{
+            grid-area: img13;
+        }
+    }
+    @media  screen and (min-width:426px) and (max-width:759px){
+        .parent{
+            margin-top: 45px;
+           display: grid;
+            width:100%;
+            height: 100%;
+            gap: 2px;
+            background-color: rgb(13, 215, 74);
+            border: 5px solid rgb(4, 64, 77);
+    
+            margin: auto;
+            grid-template-areas: 
+          'img1 img2 img3'
+          'img1 img4 img3' 
+          'img5 img5 img6'
+          'img5 img5 img7' 
+          'img8 img9 img7'
+          'img10 img9 img11'
+          'img10 img12 img13'
+            ;
+        }
+        .parent img{
+            width: 100%;
+            height: 100%;
+        }
+        .img1{
+            grid-area: img1;
+        }
+        .img2{
+            grid-area: img2;
+        }
+        .img3{
+            grid-area: img3;   
+        }
+        .img4{
+            grid-area: img4;   
+
+        }.img5{
+            grid-area: img5;
+        }
+        .img6{
+            grid-area: img6;
+        }
+        .img7{
+            grid-area: img7;    
+        }
+        .img8{
+            grid-area: img8;    
+        }
+        .img9{
+            grid-area: img9;  
+        }
+        .img10{
+            grid-area: img10;    
+        }
+        .img11{
+            grid-area: img11;   
+        }
+        .img12{
+            grid-area: img12;    
+        }
+        .img13{
+            grid-area: img13;
+        }
+    }
     </style>
 </head>
 <body>
+    <div class="main">
     <div class="parent">
         <img src="./animal-cat-cute-domestic.jpg" alt="" class="img1">
         <img src="https://live.staticflickr.com/5498/12588115603_b692d0b7e8_z.jpg" alt="" class="img2">
@@ -98,6 +224,7 @@
         <img src="https://www.cssscript.com/wp-content/uploads/2015/06/Pure-JavaScript-Gallery-Lightbox-Library-LightBox-150x150.jpg" alt="" class="img11">
         <img src="https://withinpixels.github.io/wip-image-zoom/assets/images/5-thumb.jpg" alt="" class="img12">
         <img src="https://live.staticflickr.com/8127/29725961851_590c651b6d_w.jpg" alt="" class="img13">
+    </div>
     </div>
    
 </body>
