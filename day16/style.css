@@ -21,7 +21,7 @@
     height: 200px;
     transform-style: preserve-3d;
     transform: perspective(800px);
-    animation: autoRun 20s linear infinite;
+    animation: autoRun 30s linear infinite;
     margin: 0 auto;
     z-index: 2;
 }
