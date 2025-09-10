@@ -21,7 +21,7 @@
     height: 200px;
     transform-style: preserve-3d;
     transform: perspective(800px);
-    animation: autoRun 30s linear infinite;
+    animation: autoRun 20s linear infinite;
     margin: 0 auto;
     z-index: 2;
 }
@@ -84,7 +84,7 @@
 
 /* Model background */
 .banner .content .model {
-    background-image: url(./10k_img.jpeg);
+    background-image: url(./model.png);
     width: 100%;
     height: 50vh;
     background-size: auto 100%;
