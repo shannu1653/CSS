@@ -65,12 +65,13 @@
 .banner .content h1 {
     font-family: 'ICA Rubrik';
     font-size: 3.5em;
-    color: crimson;
+    color: rgb(255, 0, 51);
     margin-bottom: 10px;
 
     /* 👇 Move heading upward */
     position: relative;
     bottom: 150px;   /* adjust value as needed */
+
 }
 
 
